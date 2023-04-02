@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TTwW App</string>
     <string name="welcome">
-   Welcome To Talking Tech With<br />
+   Welcome To Talking Tech With
    Wayne
     </string>
     <string name="ask_question">Ask a Question</string>
