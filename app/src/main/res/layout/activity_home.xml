@@ -5,5 +5,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="@font/zabal_semibold"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/waving_hand"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcome_text"
+        app:srcCompat="@drawable/waving_emoji" />
+
+    <Button
+        android:id="@+id/ask_question_button"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="@color/turquoise_blue"
+        android:fontFamily="@font/zabal_semibold"
+        android:text="@string/ask_question"
+        android:textAllCaps="false"
+        android:textColorHint="@color/turquoise_blue"
+        android:textSize="19sp"
+        app:icon="@drawable/question_mark_xml"
+        app:layout_constraintBottom_toTopOf="@+id/find_answer_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="204dp"
+        android:backgroundTint="@color/peach"
+        android:fontFamily="@font/zabal_semibold"
+        android:text="@string/request_remote"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:icon="@drawable/remote_xml"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_answer_button"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/find_answer_button"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/zabal_semibold"
+        android:text="@string/find_answer"
+        android:textAllCaps="false"
+        android:textColorHint="@color/teal_200"
+        android:textSize="19sp"
+        app:icon="@drawable/open_book_xml"
+        app:layout_constraintBottom_toTopOf="@+id/request_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ask_question_button"
+        app:layout_constraintVertical_bias="0.5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

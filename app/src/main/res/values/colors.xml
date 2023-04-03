@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black2">#131313</color>
     <color name="white_bg">#FBFBFB</color>
+    <color name="turquoise_blue">#30D5C8</color>
+    <color name="royal_blue">#4169e1</color>
+    <color name="peach">#FF9A8A</color>
 </resources>
