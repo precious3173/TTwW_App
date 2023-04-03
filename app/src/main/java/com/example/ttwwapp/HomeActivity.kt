@@ -11,6 +11,5 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         homeBinding = ActivityHomeBinding.inflate(layoutInflater)
         val view = homeBinding.root
-        setContentView(R.layout.activity_home)
-    }
+}
 }
