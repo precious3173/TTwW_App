@@ -9,7 +9,6 @@ android {
 
     defaultConfig {
         applicationId "com.example.ttwwapp"
-        second_branch
         minSdk 23
         targetSdk 33
         versionCode 1
