@@ -5,9 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.ttwwapp.Adapter.RecyclerAdapter
+import com.example.ttwwapp.DataResource.AnswerList
 import com.example.ttwwapp.R
+import com.example.ttwwapp.databinding.FragmentFindAnswerBinding
 
 class FindAnswer : Fragment() {
+    lateinit var recyclerAdapter: RecyclerAdapter
+    lateinit var findAnswerBinding: FragmentFindAnswerBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +24,20 @@ class FindAnswer : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_find_answer, container, false)
+        findAnswerBinding = FragmentFindAnswerBinding.inflate(layoutInflater)
+
+
+        val recyclerView = findAnswerBinding.recyclerview
+        recyclerAdapter = RecyclerAdapter()
+
+        recyclerAdapter.differ.submitList(AnswerList.answers())
+        recyclerView.apply {
+
+            adapter = recyclerAdapter
+            setHasFixedSize(true)
+        }
+
+        return findAnswerBinding.root
     }
 
 

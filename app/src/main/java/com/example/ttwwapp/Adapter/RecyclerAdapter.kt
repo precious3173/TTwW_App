@@ -44,5 +44,5 @@ class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.Answer>() {
         }
 
     }
-    private val differ = AsyncListDiffer(this, diffUtil)
+    val differ = AsyncListDiffer(this, diffUtil)
 }

@@ -12,7 +12,7 @@ class ActivityContainer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_container)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_graph) as NavHostFragment
-        val navController = navHostFragment.navController
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_graph) as NavHostFragment?
+//        val navController = navHostFragment!!.navController
     }
 }
