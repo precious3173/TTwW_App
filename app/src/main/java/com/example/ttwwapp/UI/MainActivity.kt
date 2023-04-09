@@ -1,4 +1,4 @@
-package com.example.ttwwapp
+package com.example.ttwwapp.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(object:Runnable{
             override fun run(){
-                val intent = Intent(this@MainActivity,HomeActivity::class.java)
+                val intent = Intent(this@MainActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
         },4000)
