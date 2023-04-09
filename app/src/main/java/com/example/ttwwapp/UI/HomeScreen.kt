@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.ttwwapp.R
+import com.example.ttwwapp.databinding.FragmentHomeScreenBinding
 
-class FindAnswer : Fragment() {
-
+class HomeScreen : Fragment() {
+  lateinit var binding: FragmentHomeScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +21,15 @@ class FindAnswer : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_find_answer, container, false)
+        val binding = FragmentHomeScreenBinding.inflate(layoutInflater)
+
+        binding.findAnswerButton.setOnClickListener {
+
+            findNavController().navigate(R.id.action_homeScreen_to_findAnswer2)
+        }
+        return binding.root
     }
+
 
 
 }

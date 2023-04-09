@@ -13,6 +13,6 @@
             android:text="My questions"
             android:layout_margin="15dp"
             android:textSize="18sp"
-            android:id="@+id/text"/>
+            android:id="@+id/answerText"/>
 
 </LinearLayout>

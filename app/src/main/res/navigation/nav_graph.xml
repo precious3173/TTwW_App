@@ -3,15 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/activityContainer">
+    app:startDestination="@layout/fragment_home_screen">
 
-    <activity
-        android:id="@+id/activityContainer"
-        android:name="com.example.ttwwapp.UI.ActivityContainer"
-        android:label="activity_container"
-        tools:layout="@layout/activity_container" />
+
     <fragment
-        android:id="@+id/findAnswer"
+        android:id="@+id/homeScreen"
+        android:name="com.example.ttwwapp.UI.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_findAnswer2"
+            app:destination="@id/findAnswer2" />
+    </fragment>
+    <fragment
+        android:id="@+id/findAnswer2"
         android:name="com.example.ttwwapp.UI.FindAnswer"
         android:label="fragment_find_answer"
         tools:layout="@layout/fragment_find_answer" />
