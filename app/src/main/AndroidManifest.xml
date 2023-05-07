@@ -27,6 +27,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".UI.MainActivity"
             android:exported="true"

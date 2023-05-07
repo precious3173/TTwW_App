@@ -27,6 +27,9 @@ class HomeScreen : Fragment() {
 
             findNavController().navigate(R.id.action_homeScreen_to_findAnswer2)
         }
+        binding.requestButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeScreen_to_requestRemote2)
+        }
         return binding.root
     }
 
