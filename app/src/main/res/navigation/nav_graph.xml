@@ -14,18 +14,13 @@
         <action
             android:id="@+id/action_homeScreen_to_findAnswer2"
             app:destination="@id/findAnswer2" />
-        <action
-            android:id="@+id/action_homeScreen_to_requestRemote2"
-            app:destination="@id/requestRemote2" />
+
     </fragment>
     <fragment
         android:id="@+id/findAnswer2"
         android:name="com.example.ttwwapp.UI.FindAnswer"
         android:label="fragment_find_answer"
         tools:layout="@layout/fragment_find_answer" />
-    <fragment
-        android:id="@+id/requestRemote2"
-        android:name="com.example.ttwwapp.UI.RequestRemote"
-        android:label="fragment_request_remote"
-        tools:layout="@layout/fragment_request_remote" />
+
 </navigation>
+
