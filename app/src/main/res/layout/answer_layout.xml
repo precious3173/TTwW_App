@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questionViewLayout"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_margin="10dp"
@@ -7,12 +8,12 @@
     android:orientation="vertical">
 
         <TextView
+            android:id="@+id/answerText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="My questions"
             android:layout_margin="15dp"
-            android:textSize="18sp"
-            android:id="@+id/answerText"/>
+            android:text="My questions"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
 </LinearLayout>
